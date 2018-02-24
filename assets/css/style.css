@@ -1,0 +1,298 @@
+body {
+    font-family: 'Arial', 'Helvetica neue', Helvetica, sans-serif;
+    background: url('hip-square.png')
+    
+}
+
+/* ID to fix gaps on header and footer */
+#page {
+    margin: 0;
+}
+
+header {
+    background: #ffffff;
+    border: #777777;
+    font-family: 'Georgia', 'Times New Roman', Times, serif
+
+}
+
+#name {
+    background: #4aaaa5;
+    padding: 10px;
+    color: white;
+    width: 155px;
+    position: relative;
+    left: 360px;
+    text-align: center;
+}
+
+/* nav bar links & styling for About, Portfolio & Contact */
+#navigation ul {
+    margin: 0;
+    padding: 0;
+    float: right;
+    padding: 30px;
+    position: relative;
+    right: 335px;
+}
+
+#navigation ul li {
+    list-style-type: none;
+    display: inline;
+}
+
+
+#navigation li:not(:first-child):before {
+    content: " | ";
+    color: #dddddd;
+    padding: 6px;
+}
+
+.navlink {
+    color: #777777;
+}
+
+.content {
+    box-sizing: border-box;
+    background: #ffffff;
+    width: 960px;
+    margin: 0 auto;
+    
+}
+
+.Aboutme {
+    background: #ffffff;
+    width: 620px;
+    border: #dddddd;
+    float: left;
+    color: #777777;
+    padding: 30px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    text-align: center;
+
+}
+
+#about {
+    color: #4aaaa5;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#contentbar {
+	background: #dddddd;
+	height: 3px;
+    margin: 30px 0 20px 0;
+   
+}
+
+p {
+    font-family: 'Noto Sans', sans-serif;
+    line-height: 1.5;
+}
+
+#profilepic {
+    height: 220px;
+    width: 175px;
+    float: left;
+    
+}
+
+.connectlinks {
+    height: 170px;
+    width: 250px;
+    background: #ffffff;
+    float: right;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: #dddddd;
+    margin-top: 35px;
+
+}
+
+#connect {
+    clear: both;
+    color: #4aaaa5;
+
+}
+
+#connectline {
+	background: #dddddd;
+	height: 2px;
+	margin: 20px;
+}
+
+#icon {
+    width: 50px;
+    height: 45px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+
+footer {
+    clear: both;
+    background: #666666;
+    color: white;
+    font-size: 11px;
+    text-align: center;
+    height: 20px;
+    padding: 25px;
+    border-top: 5px solid #4aaaa5;
+}
+
+
+
+
+/* Selectors for contact.html */
+
+#contact {
+    /* styling contact header */
+    color: #4aaaa5;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+.contactinfo {
+    /* styling all contents within contact box */
+    background: #ffffff;
+    width: 620px;
+    border: #dddddd;
+    float: left;
+    color: #777777;
+    padding: 30px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    text-align: left;
+}
+
+.textbox {
+    width: 97%;
+    padding: 7px;
+    color: #dddddd;
+
+}
+
+#msgbox {
+    width: 97.5%;
+    padding: 7px;
+    height: 200px;
+    margin-bottom: 25px;
+}
+
+input[type=submit] {
+	background: #4aaaa5;
+	border: 0px;
+	outline: none;
+	width: auto;
+	margin-top: 15px;
+	padding: 10px 30px;
+
+	font-size: 18px;
+	color: white;
+
+	transition: all 0.2s linear;
+}
+
+input[type=submit] {
+    background: #4aaaa5;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+@media screen and (max-width: 980px) {
+    .nametag {
+        width: 740px;
+    }
+
+
+.content {
+    width: 740px;
+}
+
+.Aboutme {
+    width: 430px;
+}
+
+.connectlinks {
+    width: 270px;
+}
+
+#profilepic {
+    width: 100%;
+    height: auto;
+    float: none;
+    }
+}
+
+
+@media screen and (max-width: 768px;) {
+    .nametag {
+        width: 620px;
+    }
+
+    .content {
+        width: 620px;
+        margin: 25px auto;
+    }
+
+    .Aboutme {
+        width: 100%;
+        float: none;
+    }
+
+    .connectlinks {
+        width: 100%;
+        margin-top: 25px;
+        float: none;
+    }
+
+    #profilepic {
+        width: 300px;
+        height: 200px;
+        margin: 10px 30px 10 0;
+        float: none;
+    }
+}
+
+
+@media screen and (max-width: 640px) {
+    nav ul li {
+        width: 33%;
+    }
+
+    .nametag {
+        width: 100%;
+    }
+
+    #navigation, .name {
+        width: 100%;
+        float: none;
+    }
+
+    .content {
+        width: 90%;
+    }
+
+    .Aboutme {
+        width: 100%;
+        float: none;
+    }
+
+    .connectlinks {
+        width: 100%;
+        margin-top: 25px;
+        float: none;
+    }
+
+    #profilepic {
+        width: 100%;
+        height: auto;
+        float: none;
+        margin: 10px 0;
+    }
+
+}
